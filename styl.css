@@ -1,0 +1,614 @@
+/* ===== RESET ET BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+/* ===== NAVIGATION ===== */
+nav {
+    background: linear-gradient(135deg, rgb(230, 218, 197) 0%, rgb(210, 190, 160) 100%);
+    padding: 15px 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.t1 {
+    color: rgb(90, 21, 21);
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+    animation: slideInLeft 0.6s ease-out;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    animation: slideInRight 0.6s ease-out;
+}
+
+nav li {
+    padding: 0;
+    font-size: 18px;
+}
+
+nav a {
+    color: rgb(90, 21, 21);
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: rgb(90, 21, 21);
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* ===== CONTENU PRINCIPAL ===== */
+.content {
+    padding: 40px 20px;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.c1 {
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(135deg, #fff 0%, #f5f5f5 100%);
+    border-radius: 15px;
+    margin-bottom: 40px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    animation: scaleIn 0.6s ease-out;
+}
+
+.c1 h2 {
+    font-size: 32px;
+    color: rgb(90, 21, 21);
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.c1 p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+
+.c1 img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+}
+
+.c1 img:hover {
+    transform: scale(1.05);
+}
+
+/* ===== BOUTON ===== */
+.btn1 {
+    background: linear-gradient(135deg, rgb(230, 218, 197) 0%, rgb(210, 190, 160) 100%);
+    border: 2px solid rgb(90, 21, 21);
+    color: rgb(90, 21, 21);
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 20px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn1:hover {
+    background: linear-gradient(135deg, rgb(210, 190, 160) 0%, rgb(230, 218, 197) 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== SECTION ZELLIJ ===== */
+.zellij {
+    background: linear-gradient(135deg, #fff 0%, #f5f5f5 100%);
+    padding: 40px;
+    margin: 40px 0;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.zellij h4 {
+    font-size: 28px;
+    color: rgb(90, 21, 21);
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.zellij h5 {
+    font-size: 20px;
+    color: rgb(110, 40, 40);
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.zellij p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.zellij ol {
+    margin-left: 30px;
+    font-size: 16px;
+    color: #555;
+}
+
+.zellij li1 {
+    display: list-item;
+    margin-bottom: 10px;
+}
+
+/* ===== SECTION C2 (BIENVENUE) ===== */
+.c2 {
+    background: linear-gradient(135deg, #fff 0%, #f5f5f5 100%);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+.c2 p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+/* ===== GALERIE D'IMAGES ===== */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    transition: all 0.3s ease;
+    animation: scaleIn 0.6s ease-out;
+}
+
+.gallery-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    display: block;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* ===== CATALOGUE ===== */
+#catalogue {
+    margin-top: 40px;
+}
+
+.titre-panier {
+    text-align: center;
+    background: linear-gradient(135deg, rgb(230, 218, 197) 0%, rgb(210, 190, 160) 100%);
+    color: rgb(90, 21, 21);
+    font-size: 32px;
+    font-weight: bold;
+    padding: 25px;
+    margin: 40px 0;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 0.8s ease-out;
+}
+
+#catalogue h3 {
+    text-align: center;
+    font-size: 24px;
+    color: rgb(90, 21, 21);
+    margin: 35px 0 25px;
+    font-weight: bold;
+    animation: fadeInUp 0.6s ease-out;
+}
+
+#catalogue img {
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    transition: all 0.3s ease;
+    margin: 12px;
+    display: inline-block;
+}
+
+#catalogue img:hover {
+    transform: scale(1.08) translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== SECTION VIDEO ===== */
+.video {
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(135deg, #fff 0%, #f5f5f5 100%);
+    border-radius: 15px;
+    margin: 40px 0;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.video h2 {
+    color: rgb(90, 21, 21);
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.video iframe {
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    margin: 15px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===== COMMENTAIRES ===== */
+.commentaire {
+    background: linear-gradient(135deg, #fff 0%, #f5f5f5 100%);
+    border: 2px solid rgb(230, 218, 197);
+    padding: 30px;
+    margin: 40px 0;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.commentaire h3 {
+    text-align: center;
+    color: rgb(90, 21, 21);
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.commentaire textarea {
+    width: 100%;
+    height: 120px;
+    padding: 15px;
+    border: 2px solid rgb(230, 218, 197);
+    border-radius: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    resize: vertical;
+    transition: all 0.3s ease;
+}
+
+.commentaire textarea:focus {
+    outline: none;
+    border-color: rgb(90, 21, 21);
+    box-shadow: 0 0 10px rgba(90, 21, 21, 0.2);
+}
+
+.commentaire button {
+    background: linear-gradient(135deg, rgb(230, 218, 197) 0%, rgb(210, 190, 160) 100%);
+    color: rgb(90, 21, 21);
+    padding: 12px 30px;
+    border: 2px solid rgb(90, 21, 21);
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.commentaire button:hover {
+    background: linear-gradient(135deg, rgb(210, 190, 160) 0%, rgb(230, 218, 197) 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== FORMULAIRES ===== */
+form {
+    background: linear-gradient(135deg, #fff 0%, #f5f5f5 100%);
+    padding: 30px;
+    margin: 40px 0;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    animation: fadeInUp 0.8s ease-out;
+}
+
+form h2 {
+    color: rgb(90, 21, 21);
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    color: rgb(90, 21, 21);
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid rgb(230, 218, 197);
+    border-radius: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: rgb(90, 21, 21);
+    box-shadow: 0 0 10px rgba(90, 21, 21, 0.2);
+}
+
+form button {
+    background: linear-gradient(135deg, rgb(230, 218, 197) 0%, rgb(210, 190, 160) 100%);
+    color: rgb(90, 21, 21);
+    padding: 12px 30px;
+    border: 2px solid rgb(90, 21, 21);
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+form button:hover {
+    background: linear-gradient(135deg, rgb(210, 190, 160) 0%, rgb(230, 218, 197) 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== BOUTON DEMANDE ===== */
+.bouton-demande {
+    display: inline-block;
+    background: linear-gradient(135deg, rgb(90, 21, 21) 0%, rgb(110, 40, 40) 100%);
+    color: white;
+    padding: 15px 35px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 30px auto;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(90, 21, 21, 0.3);
+    display: block;
+    text-align: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bouton-demande:hover {
+    background: linear-gradient(135deg, rgb(110, 40, 40) 0%, rgb(90, 21, 21) 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(90, 21, 21, 0.4);
+}
+
+/* ===== TITRE CONTACT ===== */
+.titre-contact {
+    text-align: center;
+    color: rgb(90, 21, 21);
+    font-size: 28px;
+    margin: 40px 0;
+    font-weight: bold;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: linear-gradient(135deg, rgb(230, 218, 197) 0%, rgb(210, 190, 160) 100%);
+    color: rgb(90, 21, 21);
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    font-weight: 500;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .t1 {
+        font-size: 22px;
+    }
+
+    .c1 h2 {
+        font-size: 24px;
+    }
+
+    .titre-panier {
+        font-size: 24px;
+    }
+
+    #catalogue img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .image-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 15px;
+    }
+
+    .gallery-item img {
+        height: 180px;
+    }
+
+    .video iframe {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 10px 15px;
+    }
+
+    .t1 {
+        font-size: 18px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .c1 {
+        padding: 20px;
+    }
+
+    .c1 h2 {
+        font-size: 20px;
+    }
+
+    .c1 p {
+        font-size: 16px;
+    }
+
+    #catalogue img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .image-gallery {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .gallery-item img {
+        height: 200px;
+    }
+
+    .video iframe {
+        height: 250px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    .titre-panier {
+        font-size: 20px;
+        padding: 15px;
+    }
+}
