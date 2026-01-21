@@ -153,7 +153,16 @@ nav a:hover::after {
     margin: 20px 0;
     transition: transform 0.3s ease;
 }
-
+.c2 img {
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    transition: all 0.3s ease;
+    margin: 12px;
+    display: inline-block;
+}
 .c1 img:hover {
     transform: scale(1.05);
 }
