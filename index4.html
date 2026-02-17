@@ -1,48 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-   <title>acceuille</title> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier - Zellige Marocain</title>
+    <link rel="stylesheet" href="styl.css">
 </head>
-<link rel="stylesheet" href="styl.css">
 <body>
-  <nav>
-  <h1 class="t1"><u>Boutique en ligne des Produits Artisanaux</u></h1>
-  <ul>
-  <li><a href="index1.html"><u>Accuiel</u></a></li>
-  <li><a href="index2.html"><u>Catalogue</u></a></li>
-  <li><a href="index3.html"><u>Panier</u></a></li>
-  <li><a href="index4.html"><u>Contact</u></a></li>
-  </ul>
-</nav>
-    <h1 class="titre-panier">Bienvenue aux Panier</h1>
-<br>
-<div class="commentaire">
-  <h3>Ajouter un commentaire</h3>
-  <form action="#">
-    <textarea name="commentaire" placeholder="Votre commentaire ici..."></textarea>
-    <button type="submit">Envoyer</button>
-  </form>
-</div>
-<a href="#" class="bouton-demande">Demandez votre propre conception de produit</a>
-<form action="#">
-  <h2>Formulaire de commande</h2>
-  <label for="nom">Nom:</label>
-  <input type="text" id="nom" name="nom" required>
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email" required>
-  <label for="adresse">Adresse:</label>
-  <input type="text" id="adresse" name="adresse" required>
-  <label for="produit">Produit:</label>
-  <select id="produit" name="produit">
-    <option value="">Choisissez un produit</option>
-    <option value="produit1">Produit 1</option>
-    <option value="produit2">Produit 2</option>
-    <option value="produit3">Produit 3</option>
-    <option value="produit3">Produit 4</option>
-  </select>
-  <label for="quantite">Quantité:</label>
-  <input type="number" id="quantite" name="quantite" required>
-  <button type="submit">Envoyer</button>
-</form>
+    <nav>
+        <a href="index.html" class="t1">Zellige Marocain</a>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index2.html">Catalogue</a></li>
+            <li><a href="index4.html">Panier</a></li>
+            <li><a href="index3.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Votre Panier</h2>
+        <div style="padding: 50px 0;">
+            <p>Votre panier est actuellement vide.</p>
+            <br>
+            <button onclick="window.location.href='index2.html'">Retourner au Catalogue</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 - Zellige Marocain - Artisanat de Fès</p>
+    </footer>
 </body>
 </html>

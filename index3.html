@@ -1,55 +1,41 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Coordonnées et Formulaire de Question</title>
+    <title>Contact - Zellige Marocain</title>
     <link rel="stylesheet" href="styl.css">
 </head>
 <body>
+    <nav>
+        <a href="index.html" class="t1">Zellige Marocain</a>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index2.html">Catalogue</a></li>
+            <li><a href="index4.html">Panier</a></li>
+            <li><a href="index3.html">Contact</a></li>
+        </ul>
+    </nav>
+
     <div class="container">
-        <header>
-            <h1>Coordonnées</h1>
-        </header>
-        <section class="contact-info">
-            <h2>Nous contacter</h2>
-            <ul>
-                <li><i class="fas fa-map-marker-alt"></i> Adresse : Rue Ain Driisi, Ville Fés , Code postal 233456</li>
-                <li><i class="fas fa-phone"></i> Téléphone : +212 694890743</li>
-                <li><i class="fas fa-envelope"></i> Email : contact zelligemaroccain09@gmail.com</li>
-            </ul>
-        </section>
-        <section class="question-form">
-            <h2>Formulaire de question</h2>
-            <form action="#">
-                <label for="name">Nom:</label>
-                <input type="text" id="name" name="name" placeholder="Votre nom">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Votre adresse email">
-                <label for="question">Question:</label>
-                <textarea id="question" name="question" placeholder="Votre question"></textarea>
-                <button type="submit">Envoyer</button>
-            </form>
-        </section>
+        <h2>Contactez-nous</h2>
+        <div style="text-align: left; margin-bottom: 30px;">
+            <p>📍 <strong>Adresse :</strong> Rue Ain Driisi, Ville Fès</p>
+            <p>📞 <strong>Téléphone :</strong> +212 694890743</p>
+            <p>✉️ <strong>Email :</strong> zelligemarocain09@gmail.com</p>
+        </div>
+
+        <h3>Envoyez-nous un message</h3>
+        <form action="https://formspree.io/f/zelligemarocain09@gmail.com" method="POST">
+            <input type="text" name="nom" placeholder="Votre Nom" required>
+            <input type="email" name="email" placeholder="Votre Email" required>
+            <textarea name="message" rows="5" placeholder="Votre Message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
     </div>
-     <footer>
-        <p>&copy; 2024 - Boutique en ligne de Zellige marocain</p>
+
+    <footer>
+        <p>&copy; 2024 - Zellige Marocain - Artisanat de Fès</p>
     </footer>
-</body>
-</html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Merci pour votre visite !</title>
-    <link rel="stylesheet" href="styl.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Merci pour votre visite !</h1>
-        <p>Nous espérons que vous avez apprécié votre visite sur notre site web.</p>
-        <p>N'hésitez pas à nous contacter si vous avez des questions ou des commentaires.</p>
-    </div>
 </body>
 </html>
