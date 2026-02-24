@@ -1,0 +1,158 @@
+/* ===== STYLE GÉNÉRAL ZELLIGE MAROCAIN ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fdfaf6; /* Couleur crème légère */
+    overflow-x: hidden;
+}
+
+/* ===== NAVIGATION ===== */
+nav {
+    background: linear-gradient(135deg, #e6dac5 0%, #d2be a0 100%);
+    padding: 15px 5%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.t1 {
+    color: #5a1515;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #5a1515;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #8b4513;
+    text-decoration: underline;
+}
+
+/* ===== CONTENU & SECTIONS ===== */
+.content, .container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+h2, h3 {
+    color: #5a1515;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* ===== UNIFORMISATION DES IMAGES (CARRÉES) ===== */
+/* Cette règle s'applique à TOUTES les images de produits */
+.image-grid img, .section img, .image-grod ,.c1 img {
+    width: 230px !important;
+    height:230px !important;
+    object-fit: cover !important;
+    border-radius: 12px;
+    margin: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Grille pour le catalogue */
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* ===== FORMULAIRES ===== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #5a1515;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #8b4513;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #e6dac5;
+    color: #5a1515;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* ===== RESPONSIVE MOBILE ===== */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .image-grid img, .section img, .c1 img {
+        width: 160px !important;
+        height: 160px !important;
+        margin: 5px;
+    }
+}
+.titre-panier {
+  text-align: center;
+  background-color: rgb(230, 218, 197);
+  color: maroon;
+  font-size: 2em;
+  padding: 10px 20px;
+  margin: 20px 0;
+}
+
